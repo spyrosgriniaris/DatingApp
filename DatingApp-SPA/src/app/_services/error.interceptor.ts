@@ -28,7 +28,7 @@ import { catchError } from 'rxjs/operators';
                     // exoun ti morfi error.error.errors kai mesa periexoun arrays. px an valw kwdiko mikro pairnw tetoio error
                     if (serverError.errors && typeof serverError.errors === 'object'){
                         for (const key in serverError.errors){
-                            if(serverError.errors[key]){
+                            if (serverError.errors[key]){
                                 modalStateErrors += serverError.errors[key] + '\n';
                             }
                         }

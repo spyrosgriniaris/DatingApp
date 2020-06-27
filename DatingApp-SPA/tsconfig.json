@@ -16,6 +16,9 @@
       "dom"
     ]
   },
+  "typeRoots": [
+    "src/typings.d.ts"
+  ],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
