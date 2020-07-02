@@ -18,6 +18,7 @@ namespace DatingApp.API.Helpers
             // prepei na merimnisw kai gia ta pedia pou den einai idia
             // an kanw retrieve sugkekrimeno user sto pedio photos mou ksanagurnaei olo ton user. tha xreiastw kai dto gia auto
             CreateMap<Photo, PhotosForDetailedDto>();
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }
