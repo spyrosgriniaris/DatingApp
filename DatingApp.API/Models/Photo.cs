@@ -9,6 +9,10 @@ namespace DatingApp.API.Models
         public string Description { get; set; }
         public DateTime DateAdded { get; set; }
         public bool isMain { get; set; }
+        //=============================================
+        // to response apo to cloudinary periexei kai ena public id, to opoio prosthetw stin klasi auti gia na to apothikeusw
+        public string PublicId { get; set; }
+        //=============================================
         public User User { get; set; }
         public int UserId { get; set; }
     }

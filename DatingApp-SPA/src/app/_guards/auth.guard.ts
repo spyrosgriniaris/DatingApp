@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
-import { ThrowStmt } from '@angular/compiler';
-import { FindValueSubscriber } from 'rxjs/internal/operators/find';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +15,7 @@ export class AuthGuard implements CanActivate {
                private router: Router,
                private alertify: AlertifyService) { }
   canActivate(): boolean  {
-    if(this.authService.loggedIn()){
+    if (this.authService.loggedIn()){
       return true;
     }
 
