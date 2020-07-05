@@ -19,7 +19,7 @@
       <!-- prosthiki gia ti main photo, xrisimopoiw kai css -->
       <span class="mr-1">
         <!-- <img src="{{authService.currentUser.photoUrl}}" alt=""> -->
-        <img src="{{photoUrl}}" alt="">
+        <img src="{{photoUrl || '../../../../assets/user.png'}}" alt="">
       </span>
       <a class="dropdown-toggle text-light" dropdownToggle>
         Welcome {{ authService.decodedToken?.unique_name | titlecase }}
