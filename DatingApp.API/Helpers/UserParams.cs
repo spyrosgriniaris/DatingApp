@@ -26,6 +26,11 @@ namespace DatingApp.API.Helpers
         // sorting area
         public string OrderBy { get; set; }
         // end of sorting area
+
+        // likes functionality
+        public bool Likees { get; set; } = false;
+        public bool Likers { get; set; } = false;
+        // end of like functionality
         
     }
 }

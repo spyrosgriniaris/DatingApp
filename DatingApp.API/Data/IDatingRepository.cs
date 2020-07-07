@@ -16,5 +16,7 @@ namespace DatingApp.API.Data
          // added with phtos controller for get method
          Task<Photo> GetPhoto(int id);
          Task <Photo> GetMainPhotoForUser(int userId);
+         // send like functionality
+         Task<Like> GetLike(int userId, int recipientId);
     }
 }
