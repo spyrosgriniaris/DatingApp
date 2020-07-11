@@ -18,5 +18,11 @@ namespace DatingApp.API.Data
          Task <Photo> GetMainPhotoForUser(int userId);
          // send like functionality
          Task<Like> GetLike(int userId, int recipientId);
+
+         // message functionality
+         Task<Message> GetMessage(int id);
+         Task<PagedList<Message>> GetMessagesForUser(MessageParams messageParams); // inbox, outbox or unread messages
+         Task<IEnumerable<Message>> GetMessageThread(int userId, int recipientId); // it is the conversation in the tab panel
+
     }
 }
